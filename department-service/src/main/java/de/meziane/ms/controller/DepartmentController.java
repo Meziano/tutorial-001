@@ -27,5 +27,6 @@ public class DepartmentController {
 		Department dept = departmentRepository.getOne(id); 
 		return dept;
 	}
+	
 
 }

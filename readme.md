@@ -144,7 +144,7 @@ INSERT INTO department (id, name, description) VALUES
 #### 2.1.7. Accessing Data 
 If we start the application as a Spring Boot Application, we can immediately access the end-points defined in the *DepartmentController*. 
 
-![enter image description here](https://b24-zahixy.bitrix24.de/disk/showFile/140262/?&ncc=1&ts=1558514196&filename=findAlldepartments.png)
+![Get all Departments](https://b24-zahixy.bitrix24.de/disk/showFile/140262/?&ncc=1&ts=1558514196&filename=findAlldepartments.png)
 ### 2.2. The employee-service
 The **employee-service** is also a simple spring-boot application with a *RestCotroller* to deal with data about employees (retrieve employees, add a new, update or delete an employee ..). 
 

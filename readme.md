@@ -150,8 +150,7 @@ The **employee-service** is also a simple spring-boot application with a *RestCo
 
 As the **employee-service** is identical to the **department-service**, we will not deal with its details.
 We just note that this service will be available under  http://localhost:8081 
-![1- All Employees](/images/findAllEmployees.png?raw=true)
-![2- All Employees](images/findAllEmployees.png?raw=true)
+![All Employees](/images/findAllEmployees.png?raw=true)
 ## 3. Summary 
 We have 2 independant rest-services and we can access the related data through the defined end-points.
 > Written with [StackEdit](https://stackedit.io/).

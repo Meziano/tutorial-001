@@ -150,8 +150,6 @@ The **employee-service** is also a simple spring-boot application with a *RestCo
 
 As the **employee-service** is identical to the **department-service**, we will not deal with its details.
 We just note that this service will be available under  http://localhost:8081 
-
-![get all Employees](https://b24-zahixy.bitrix24.de/disk/showFile/140256/?&ncc=1&ts=1558514160&filename=findAllEmployees.png)
 ![1- All Employees](/images/findAllEmployees.png?raw=true)
 ![2- All Employees](images/findAllEmployees.png?raw=true)
 ## 3. Summary 

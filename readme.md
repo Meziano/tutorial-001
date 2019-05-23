@@ -150,7 +150,6 @@ If we start the application as a Spring Boot Application, we can immediately acc
 The **employee-service** is also a simple spring-boot application with a *RestCotroller* to deal with data about employees (retrieve employees, add a new, update or delete an employee ..). 
 
 As the **employee-service** is identical to the **department-service**, we will not deal with its details.
-We just note that this service will be available under  http://localhost:8081
 We also must notice that the **Employee** Java class has a *departmentId* :
 ```
 package de.meziane.ms.domain;
@@ -173,5 +172,5 @@ public class Employee {
 We have 2 independant rest-services and we can access the related data through the defined end-points.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzOTc4MTA0XX0=
+eyJoaXN0b3J5IjpbLTE3ODk3MjgzMzYsMjEzOTc4MTA0XX0=
 -->

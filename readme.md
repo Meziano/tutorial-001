@@ -1,11 +1,11 @@
 
 # Microservices Tutorial 001
-## 1. The eclipse project
+##  The eclipse project
 The eclipse project consist of the parent project and its 2 child modules or projects.
 
 ![The project's structure](images/project-structure.png)
 
-### 1.1. The parent project
+###  The parent project
 The best way to have this structure is to let maven generate the projects executing by executing the following Maven goal: 
 ```
 mvn archetype:generate -DgroupId=de.meziane.ms \ 
@@ -18,7 +18,7 @@ maven generates a simple pom under *tutorial-001* with:
   <packaging>pom</packaging>
 ``` 
 This is where the configuration to be shared is located and eventually reused in child modules.
-#### 1.1.2. spring-boot-starter-parent as parent
+#### spring-boot-starter-parent as parent
 To turn the modules into spring-bot applications, we have to add *spring-boot-starter-parent* as the parent of our parent project:
 ```
 <parent>
@@ -28,14 +28,14 @@ To turn the modules into spring-bot applications, we have to add *spring-boot-st
   <relativePath /> <!-- lookup parent from repository -->
 </parent>
 ```
-#### 1.1.3. The dependencies
+#### The dependencies
 The application needs the following dependencies:
  - spring-boot-starter-web 
  - spring-boot-starter-data-jpa
  - spring-boot-starter-data-jpa
  - h2
  - spring-boot-starter-test
-#### 1.1.4. The spring-boot-maven-plugin
+#### The spring-boot-maven-plugin
 We need also to add the *spring-boot-maven-plugin*:
 ```
 <build>
@@ -47,7 +47,7 @@ We need also to add the *spring-boot-maven-plugin*:
   </plugins>
 </build>
 ```
-### 1.2. The child projects
+### The child projects
 To let Maven generate the child projects, we just need to execute:
 For the department-service project:
 ```
@@ -65,11 +65,11 @@ mvn archetype:generate -DgroupId=de.meziane.ms \
 ```
 We are now ready to go.
 
-## 2. The restservices or trivial microservices
+## The restservices or trivial microservices
 Let's start with 2 simple rest-services or trivial microservices, which retrieve data from a backend (a database for example), and which may communicate between them . 
-### 2.1. The department-service
+### The department-service
 The **department-service** is simple spring-boot application with a *RestCotroller* to deal with data about departments (retrieve departments with or without their respective employees, add a new, update or delete a department ..) . 
-#### 2.1.1. The DepartmentApplication
+#### The DepartmentApplication
 The *DepartmentApplication* is annotated with the usual annotation *@SpringBootApplication*: 
 ```
 package de.meziane.ms;
@@ -80,7 +80,7 @@ public class DepartmentApplication {
     SpringApplication.run(DepartmentApplication.class, args);
 }
 ```
-#### 2.1.2. the Department domain class
+#### The Department domain class
 This is a simple Java class annotated as *Entity*:
 ```
 package de.meziane.ms.domain;
@@ -95,7 +95,7 @@ public class Department {
   // The Getters and Setters
 }
 ```
-#### 2.1.3. the DepartmentRepository
+#### The DepartmentRepository
 ```
 package de.meziane.ms.repository;
 ...
@@ -156,3 +156,6 @@ We just note that this service will be available under  http://localhost:8081
 ## 3. Summary 
 We have 2 independant rest-services and we can access the related data through the defined end-points.
 > Written with [StackEdit](https://stackedit.io/).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTkyMzYyNzM2N119
+-->

@@ -8,7 +8,7 @@ The eclipse project consist of the parent project and its 2 child modules or pro
 ![The project's structure](images/project-structure.png)
 
 ###  The parent project
-The best way to have this structure is to let maven generate the projects executing by executing the following Maven goal: 
+The best way to have this structure is to let maven generate the projects by executing the following Maven goal: 
 ```
 mvn archetype:generate -DgroupId=de.meziane.ms \ 
 -DartifactId=tutorial-001 \
@@ -19,9 +19,9 @@ maven generates a simple pom under *tutorial-001* with:
 ```
   <packaging>pom</packaging>
 ``` 
-This is where the configuration to be shared is located and eventually reused in child modules.
+This is where the configuration to be shared is located and eventually reused in child projects/modules.
 #### spring-boot-starter-parent as parent
-To turn the modules into spring-bot applications, we have to add *spring-boot-starter-parent* as the parent of our parent project:
+To turn the modules into **Spring Boot Application**s, we have to add *spring-boot-starter-parent* as the parent of our parent project:
 ```
 <parent>
   <groupId>org.springframework.boot</groupId>
@@ -159,5 +159,5 @@ We just note that this service will be available under  http://localhost:8081
 We have 2 independant rest-services and we can access the related data through the defined end-points.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTY3ODM3NjJdfQ==
+eyJoaXN0b3J5IjpbNjc3OTU1NjQxXX0=
 -->

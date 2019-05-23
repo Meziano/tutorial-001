@@ -68,9 +68,9 @@ mvn archetype:generate -DgroupId=de.meziane.ms \
 We are now ready to go.
 
 ## The Rest-Services or Trivial Microservices
-Let's start with 2 simple rest-services or trivial microservices, which retrieve data from a backend (an in-memory database ), and which may communicate between them . 
+Let's start with 2 simple rest-services or trivial microservices, which retrieve data from a backend (h2 an *in-memory* database ), and which may communicate between them . 
 ### The department-service
-The **department-service** is simple spring-boot application with a *RestCotroller* to deal with data about departments (retrieve departments with or without their respective employees, add a new, update or delete a department ..) . 
+The **department-service** is a simple **Spring Boot Application** with a *RestCotroller* to deal with data about *departments* (retrieve departments with or without their respective employees, add a new, update or delete a department ..) . 
 #### The DepartmentApplication
 The *DepartmentApplication* is annotated with the usual annotation *@SpringBootApplication*: 
 ```
@@ -103,7 +103,6 @@ package de.meziane.ms.repository;
 ...
 @Repository
 public interface DepartmentRepository extends JpaRepository<Department, Long> {
-	
 }
 ```  
 #### The DepartmentController
@@ -159,5 +158,5 @@ We just note that this service will be available under  http://localhost:8081
 We have 2 independant rest-services and we can access the related data through the defined end-points.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDUxMzkyMjZdfQ==
+eyJoaXN0b3J5IjpbLTExNjIwNTk3NjhdfQ==
 -->

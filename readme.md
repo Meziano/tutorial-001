@@ -51,14 +51,14 @@ We need also to add the *spring-boot-maven-plugin*:
 ```
 ### The child projects
 To let Maven generate the child projects, we just need to execute:
-For the department-service project:
+For the **department-service** project:
 ```
 mvn archetype:generate -DgroupId=de.meziane.ms 
 -DartifactId=department-service 
 -DarchetypeArtifactId=maven-archetype-quickstart 
 -DinteractiveMode=false
 ```
-and for the employee-service: 
+and for the **employee-service**: 
 ```
 mvn archetype:generate -DgroupId=de.meziane.ms \
 -DartifactId=employee-service \
@@ -67,8 +67,8 @@ mvn archetype:generate -DgroupId=de.meziane.ms \
 ```
 We are now ready to go.
 
-## The restservices or trivial microservices
-Let's start with 2 simple rest-services or trivial microservices, which retrieve data from a backend (a database for example), and which may communicate between them . 
+## The Rest-Services or Trivial Microservices
+Let's start with 2 simple rest-services or trivial microservices, which retrieve data from a backend (an in-memory database ), and which may communicate between them . 
 ### The department-service
 The **department-service** is simple spring-boot application with a *RestCotroller* to deal with data about departments (retrieve departments with or without their respective employees, add a new, update or delete a department ..) . 
 #### The DepartmentApplication
@@ -159,5 +159,5 @@ We just note that this service will be available under  http://localhost:8081
 We have 2 independant rest-services and we can access the related data through the defined end-points.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3OTU1NjQxXX0=
+eyJoaXN0b3J5IjpbLTExMDUxMzkyMjZdfQ==
 -->

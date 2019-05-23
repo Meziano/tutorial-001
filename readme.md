@@ -104,7 +104,7 @@ public interface DepartmentRepository extends JpaRepository<Department, Long> {
 	
 }
 ```  
-#### 2.1.4. the DepartmentController
+#### The DepartmentController
 ```
 public class DepartmentController {
 
@@ -124,14 +124,14 @@ public class DepartmentController {
   }
 }
 ```
-#### 2.1.5. The configuration file
+#### The configuration file
 Although not necesseary we add an application.properties file under *src/main/resources* with the following properties:
 ```
 spring.application.name=department-service
 server.port=8081
 ```
 The application will be available under http://localhost:8081  
-#### 2.1.6. Populating the database at startup
+#### Populating the database at startup
 As we are using an *in-memory* database, we want to have some data to play with. To this purpose we add a file *data.sql* under *src/main/resources*. Spring will pick it up and use it for populating the database. Here is the content of this file:
 ```
 INSERT INTO department (id, name, description) VALUES
@@ -141,11 +141,11 @@ INSERT INTO department (id, name, description) VALUES
   (4L, 'relations éxterieures', 'Departement des relations éxterieures.')
 ;  
 ```
-#### 2.1.7. Accessing Data 
+#### Accessing Data 
 If we start the application as a Spring Boot Application, we can immediately access the end-points defined in the *DepartmentController*. 
 
 ![Get all Departments](images/findAlldepartments.png?raw=true)
-### 2.2. The employee-service
+### The employee-service
 The **employee-service** is also a simple spring-boot application with a *RestCotroller* to deal with data about employees (retrieve employees, add a new, update or delete an employee ..). 
 
 As the **employee-service** is identical to the **department-service**, we will not deal with its details.
@@ -153,9 +153,9 @@ We just note that this service will be available under  http://localhost:8081
 
 
 ![All Employees](images/findAllEmployees.png?raw=true)
-## 3. Summary 
+## Summary 
 We have 2 independant rest-services and we can access the related data through the defined end-points.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMzYyNzM2N119
+eyJoaXN0b3J5IjpbLTE2MDg1MzUyODhdfQ==
 -->

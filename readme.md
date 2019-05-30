@@ -14,6 +14,7 @@ mvn archetype:generate -DgroupId=de.meziane.ms \
 -DartifactId=tutorial-001 \
 -DarchetypeGroupId=org.codehaus.mojo.archetypes \
 -DarchetypeArtifactId=pom-root \
+-DinteractiveMode=false
 ```
 maven generates a simple pom under *tutorial-001* with:
 ```
@@ -174,5 +175,6 @@ The service will be available under  http://localhost:8081
 We have 2 independant rest-services and we can access the related data through the defined end-points.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzM5MjUxNDYsMjEzOTc4MTA0XX0=
+eyJoaXN0b3J5IjpbMTIwMTYwMjE0MiwtMTMzMzkyNTE0NiwyMT
+M5NzgxMDRdfQ==
 -->

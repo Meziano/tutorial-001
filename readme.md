@@ -69,18 +69,13 @@ mvn archetype:generate -DgroupId=de.meziane.ms \
 Maven generates in both case a simple project with a simple Java class:
 ```
 package de.meziane.ms;
-
-/**
- * Hello world!
- *
- */
 public class App {
-    public static void main( String[] args )   {
+    public static void main( String[] args ) {
         System.out.println( "Hello World!" );
     }
 }
-
 ```
+It's not mandatory but I changed the name of these classes to `DepartmentApplication` and `EmployeeApplication` 
 We are now ready to go.
 
 ## The Rest-Services or Trivial Microservices
@@ -190,6 +185,6 @@ The service will be available under  http://localhost:8081
 We have 2 independant rest-services and we can access the related data through the defined end-points.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI1MzEyNzAwLDEyMDE2MDIxNDIsLTEzMz
+eyJoaXN0b3J5IjpbNjM0NjU5MTY2LDEyMDE2MDIxNDIsLTEzMz
 M5MjUxNDYsMjEzOTc4MTA0XX0=
 -->

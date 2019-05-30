@@ -82,7 +82,7 @@ Furthermore we have to add a `Source Folder`  namesd `resources` to both project
 We are now ready to go.
 
 ## The Rest-Services or Trivial Microservices
-Let's start with 2 simple rest-services or trivial microservices, which retrieve data from a backend (h2 an *in-memory* database ), and which may communicate between them . 
+Let's start with 2 simple rest-services or trivial microservices, which retrieve data from a backend (an `h2` *in-memory* database), and which will communicate between them. 
 ### The department-service
 The **department-service** is a simple **Spring Boot Application** with a *RestCotroller* to deal with data about *departments* (retrieve departments with or without their respective employees, add a new, update or delete a department ..) . 
 #### The DepartmentApplication
@@ -188,6 +188,6 @@ The service will be available under  http://localhost:8081
 We have 2 independant rest-services and we can access the related data through the defined end-points.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU1MzQ0MzQzLDEyMDE2MDIxNDIsLTEzMz
-M5MjUxNDYsMjEzOTc4MTA0XX0=
+eyJoaXN0b3J5IjpbLTE0MTcyMjMxNzYsMTIwMTYwMjE0MiwtMT
+MzMzkyNTE0NiwyMTM5NzgxMDRdfQ==
 -->

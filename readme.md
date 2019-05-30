@@ -75,7 +75,9 @@ public class App {
     }
 }
 ```
-It's not mandatory but I changed the name of these classes to `DepartmentApplication` and `EmployeeApplication` 
+It's not mandatory but I changed the name of these classes to `DepartmentApplication` and `EmployeeApplication` respectively.
+
+Furthermore we have to add 
 We are now ready to go.
 
 ## The Rest-Services or Trivial Microservices
@@ -185,6 +187,6 @@ The service will be available under  http://localhost:8081
 We have 2 independant rest-services and we can access the related data through the defined end-points.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM0NjU5MTY2LDEyMDE2MDIxNDIsLTEzMz
-M5MjUxNDYsMjEzOTc4MTA0XX0=
+eyJoaXN0b3J5IjpbLTE5MDU4NzcyODYsMTIwMTYwMjE0MiwtMT
+MzMzkyNTE0NiwyMTM5NzgxMDRdfQ==
 -->
